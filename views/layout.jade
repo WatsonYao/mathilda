@@ -1,9 +1,15 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    meta(name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=yes")
+    head
+        title= title
 
-  body
-    block content
+        meta(name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=yes")
+
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet" href="/node_modules/material-design-lite/material.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        script.
+            src="/node_modules/material-design-lite/material.min.js";
+
+    body
+        block content
