@@ -22,8 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/static', express.static(__dirname + '/node_modules/material-design-lite'));
-app.use('/static', express.static(__dirname + '/node_modules/react'));
-app.use('/static', express.static(__dirname + '/node_modules/react-dom'));
+app.use('/examples', express.static(__dirname + '/examples'));
 
 app.use('/', routes);
 app.use('/users', users);
